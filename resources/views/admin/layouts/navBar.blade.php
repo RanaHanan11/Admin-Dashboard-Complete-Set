@@ -80,7 +80,7 @@
                     <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                         <img src="{{ asset('admin-dashboard/assets/img/user/user.png') }}"
                             class="user-image" alt="User Image" />
-                        <span class="d-none d-lg-inline-block">Abdus Salam</span>
+                        <span class="d-none d-lg-inline-block">{{ Auth::User()->name }}</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <!-- User image -->
@@ -88,7 +88,7 @@
                             <img src="{{ asset('admin-dashboard/assets/img/user/user.png') }}"
                                 class="img-circle" alt="User Image" />
                             <div class="d-inline-block">
-                                Abdus Salam <small class="pt-1">abdus@gmail.com</small>
+                                {{ Auth::User()->name }} <small class="pt-1">{{ Auth::User()->email }}</small>
                             </div>
                         </li>
 
